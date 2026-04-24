@@ -1,0 +1,144 @@
+:root {
+  --gris-plata: #c0c0c0;
+  --amarillo-vial: #eeb906;
+  --azul-oscuro: #4e5b64;
+  --azul-profundo: #47606f;
+  --blanco-sucio: #f4f4f4;
+  --fuente-principal: 'Montserrat', sans-serif;
+}
+
+body {
+  font-family: var(--fuente-principal);
+  line-height: 1.6;
+  color: var(--azul-oscuro);
+  background-color: var(--blanco-sucio);
+  margin: 0;
+  padding: 0;
+}
+
+nav {
+  background-color: var(--azul-profundo);
+  padding: 1rem;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 10px 20px;
+  border-radius: 4px;
+  transition: all 0.3s ease;
+}
+
+nav a:hover {
+  background-color: var(--amarillo-vial);
+  color: var(--azul-profundo);
+}
+
+section {
+  padding: 60px 20px;
+  max-width: 1000px;
+  margin: 0 auto;
+  border-bottom: 1px solid var(--gris-plata);
+}
+
+h1, h2, h3 {
+  color: var(--azul-profundo);
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+p {
+  margin-bottom: 1rem;
+  text-align: justify;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 20px auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+form {
+  background: white;
+  padding: 30px;
+  border-radius: 8px;
+  border-top: 5px solid var(--amarillo-vial);
+  max-width: 600px;
+  margin: 20px auto;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+}
+
+input, textarea, select {
+  width: 100%;
+  padding: 12px;
+  margin: 10px 0 20px 0;
+  border: 1px solid var(--gris-plata);
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+button, .boton {
+  background-color: var(--azul-profundo);
+  color: white;
+  padding: 12px 25px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: bold;
+  display: block;
+  width: fit-content;
+  margin: 0 auto;
+  transition: background 0.3s;
+}
+
+button:hover, .boton:hover {
+  background-color: var(--amarillo-vial);
+  color: var(--azul-profundo);
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+  background: white;
+}
+
+table th {
+  background-color: var(--azul-profundo);
+  color: white;
+  padding: 15px;
+  text-align: left;
+}
+
+table td {
+  padding: 12px;
+  border: 1px solid var(--gris-plata);
+}
+
+table tr:nth-child(even) {
+  background-color: #eeeeee;
+}
+
+.footer {
+  text-align: center;
+  padding: 40px;
+  background-color: var(--azul-oscuro);
+  color: white;
+  margin-top: 40px;
+}
