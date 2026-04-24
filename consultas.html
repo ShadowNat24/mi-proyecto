@@ -1,50 +1,36 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-<meta charset="UTF-8">
-<title>Consultas</title>
-<link rel="stylesheet" href="css/estilo.css">
+    <meta charset="UTF-8">
+    <title>Contáctanos - Logística Rivera</title> <link rel="stylesheet" href="css/estilo.css">
 </head>
-
 <body>
 
-<h1>Consultas</h1>
+    <h1>Contáctanos</h1>
 
-<p>Envíanos tu consulta.</p>
+    <section id="medios-contacto">
+        <h3>Nuestros Medios</h3>
+        <p><strong>Teléfono:</strong> 099 123 456</p>
+        <p><strong>Email:</strong> contacto@todoblanco.com</p>
+        <p><strong>Redes:</strong> @LogisticaRivera</p>
+    </section>
 
-<form>
+    <hr> <section id="seccion-formulario">
+        <p>Envíanos tu consulta y te responderemos a la brevedad:</p>
 
-<label>Nombre:</label><br>
-<input type="text"><br><br>
+        <form id="form-consulta">
+            <label for="nombre">Nombre:</label><br>
+            <input type="text" id="nombre" name="nombre" required><br><br>
 
-<label>Email:</label><br>
-<input type="email"><br><br>
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email" required><br><br>
 
-<label>Consulta:</label><br>
-<textarea rows="4" cols="30"></textarea><br><br>
+            <label for="mensaje">Consulta:</label><br>
+            <textarea id="mensaje" name="mensaje" rows="4" cols="30"></textarea><br><br>
 
-<button>Enviar</button>
-
-</form>
-
-<hr>
-
-<h2>Teléfono</h2>
-
-<a href="tel:+59812345678">+598 1234 5678</a><br>
-
-
-<h3>Redes Sociales</h3>
-
-<a href="https://www.instagram.com" target="_blank">Instagram</a><br>
-
-<a href="https://www.facebook.com" target="_blank">Facebook</a><br>
-
-<a href="https://www.youtube.com" target="_blank">YouTube</a>
-
-<br><br>
-
-<a href="index.html">Volver a la página principal.</a>
+            <button type="submit" id="btn-enviar">Enviar</button>
+        </form>
+    </section>
 
 </body>
 </html>
