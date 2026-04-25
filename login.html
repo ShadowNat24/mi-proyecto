@@ -2,27 +2,33 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <title>Login Básico</title>
-    <link rel="stylesheet" href="css/estilo.css">  
+    <title>Iniciar Sesión - Todo en Blanco</title>
+    <link rel="stylesheet" href="css/estilo.css">
 </head>
 <body>
+    <main>
+        <h2>Iniciar Sesión</h2>
+        <form action="bienvenido.html" id="formLogin">
+            <label>Cédula (sin puntos ni guiones):</label><br>
+            <input type="number" name="cedula" min="1000000" placeholder="Ej: 12345678" required><br><br>
 
-<h2>Iniciar Sesión</h2>
+            <label>Contraseña:</label><br>
+            <input type="password" id="pass" name="password" minlength="8" required>
+            <button type="button" onclick="mostrarPass()">👁️</button><br><br>
 
-<form action="bienvenido.html">
-    
-    <label>Cédula (sin guiones):</label><br>
-    <input type="text" name="cedula" pattern="[0-9]+" required><br><br>
+            <button type="submit">Ingresar</button>
+        </form>
+    </main>
 
-    <label>Contraseña:</label><br>
-    <input type="password" name="password" required><br><br>
-
-    <button type="submit">Ingresar</button>
-<p>
-    <a href="index.html">Volver a la Pagina Principal</a>
-</p>
-
-</form>
-
+    <script>
+        function mostrarPass() {
+            var x = document.getElementById("pass");
+            if (x.type === "password") {
+                x.type = "text";
+            } else {
+                x.type = "password";
+            }
+        }
+    </script>
 </body>
 </html>
