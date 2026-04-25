@@ -1,67 +1,68 @@
-# Etiquetas de HTML
+# Etiquetas HTML Usadas en el Proyecto
 
 - `<!DOCTYPE html>`: Indica que el documento es tipo HTML.
 - `<html>...</html>`: Espacio donde se alojan las etiquetas para la pagina.
-
-- `<head>...</head>`: Contiene los metadatos de la pagina. Es decir, configuraciones o informacion relevante para el navegador e indexadores de motores de busqueda.
-
-- `<body>...</body>`: Espacio donde se alojan las etiquetas correspondientes a lo visual de la pagina.
-
-- `<meta>`: Datos y configuraciones relevantes para el navegador y los motores de busqueda.
-
+- `<head>...</head>`: Contiene los metadatos de la pagina.
+- `<meta>`: Datos y configuraciones relevantes para el navegador.
 - `<title>...</title>`: Titulo que aparece en la pestaña del navegador.
-
-- `<h1>...</h1>`: Primer titulo, se puede llegar hasta el titulo nivel 6.
-
-- `<img>`: Inserta una imagen. Se necesita el atributo `src` para agregar la ruta de la imagen. `alt` en caso de que la etiqueta no cargue. `title` para que aparezca el titulo de la imagen al poner el cursor encima.
-
-- `<figure>...</figure>`: Envuelve la imagen, se usa cuando se tiene una coleccion de imagenes y fragmentos de codigo.
-
-- `<code>...</code>`: Muestra un fragmento de codigo.
-
-- `<figcaption>...</figcaption>`: Pasaje descriptivo de la imagen dentro de figure.
-
-- `<blockquote>...</blockquote>`: Cita que se utiliza cuando se referencia o parafraseo largo de un autor o pagina. Envuelve todo el contenido citado.
-
-- `<cite>...</cite>`: Se utiliza cuando se hace referencia a un autor.
-
-- `<q>...</q>`: Parafraseo o citado corto.
-
-- `<i>...</i>`: Cursiva.
-
-- `<em>...</em>`: Cursiva pero con violencia (haciendo enfasis).
-
-- `<b>...</b>`: Negrita.
-
-- `<strong>...</strong>`: Negrita pero con violencia (con enfasis).
-
-- `<u>...</u>`: Subrayado. (El canal no...)
-
-- `<button>...</button>`: Boton generico. `disabled` Para inhabilitarlo.
-
+- `<link>`: Enlaza recursos externos como CSS o fuentes.
+- `<script>...</script>`: Incluye código JavaScript.
+- `<body>...</body>`: Espacio donde se alojan las etiquetas correspondientes a lo visual de la pagina.
+- `<header>...</header>`: Cabecera de la página.
+- `<nav>...</nav>`: Navegación.
+- `<main>...</main>`: Contenido principal.
+- `<section>...</section>`: Sección de contenido.
+- `<footer>...</footer>`: Pie de página.
+- `<h1>...</h1>`: Primer titulo.
+- `<h2>...</h2>`: Segundo titulo.
+- `<h3>...</h3>`: Tercer titulo.
 - `<p>...</p>`: Parrafo.
-
-- `<span>...</span>`: Texto breve. %&^!X3$#$%$ #@$#$$@#$$#$#@ $%$#$#$%&#$&$#%%#
-
-- `<a>...</a>`: Hipervinculo. `href` para ingresar la ruta/url a la cual redirigirse. `target` indica si abrirlo en la misma pestania o en otra, para abrirlo en otra se usa `target="_blank`. Se usa `mailto` en el atributo `href` para redirigir al usuario a enviar un correo, ejemplo: `href="mailto:correo@aol.com"`. Lo mismo de mailto ocurre con `tel`.
-
-- `<ul>...</ul>`: Seccion de lista desordenada.
-
-- `<ol>...</ol>`: Seccion de lista ordenada. Por defecto son numeros, pero con el atributo `type` se puede ordenar por letras u otros estilos. Con `start` se puede indicar desde que numero o letra empieza.
+- `<a>...</a>`: Hipervinculo. `href` para la ruta, `target` para abrir en nueva pestaña.
+- `<ul>...</ul>`: Lista desordenada.
+- `<li>...</li>`: Elemento de lista.
+- `<img>`: Inserta una imagen. `src` para la ruta, `alt` para descripción.
+- `<figure>...</figure>`: Envuelve la imagen.
+- `<figcaption>...</figcaption>`: Descripción de la imagen.
+- `<form>...</form>`: Formulario.
+- `<label>...</label>`: Etiqueta para inputs.
+- `<input>`: Campo de entrada. `type`, `name`, `placeholder`, `required`, etc.
+- `<textarea>...</textarea>`: Área de texto.
+- `<select>...</select>`: Lista desplegable.
+- `<option>...</option>`: Opción en select.
+- `<button>...</button>`: Boton.
+- `<table>...</table>`: Tabla.
+- `<thead>...</thead>`: Cabecera de tabla.
+- `<tbody>...</tbody>`: Cuerpo de tabla.
+- `<tr>...</tr>`: Fila de tabla.
+- `<th>...</th>`: Celda de cabecera.
+- `<td>...</td>`: Celda de datos.
+- `<div>...</div>`: Contenedor genérico.
+- `<span>...</span>`: Texto breve.
+- `<strong>...</strong>`: Texto en negrita con énfasis.
+- `<br>`: Salto de línea.
+- `<hr>`: Línea horizontal.
 
 ## Selectores CSS Usados
 
-- `:root`: Selector para definir variables CSS globales (custom properties).
-
-- `body`: Selector para el elemento body, aplica estilos al cuerpo de la página.
-
-- `nav`: Selector para el elemento nav, estilos para la navegación.
-
-- `nav a`: Selector descendente para enlaces dentro de nav.
-
-- `nav a:hover`: Pseudo-clase para enlaces en nav al pasar el mouse.
-
-- `section`: Selector para elementos section, estilos para secciones de contenido.
+- `:root`: Define variables CSS globales.
+- `body`: Estilos para el cuerpo de la página.
+- `nav`: Estilos para la navegación.
+- `nav a`: Enlaces en la navegación.
+- `nav a:hover`: Enlaces en navegación al pasar el mouse.
+- `section`: Estilos para secciones.
+- `h1, h2, h3`: Títulos.
+- `p`: Párrafos.
+- `img`: Imágenes.
+- `ul`: Listas desordenadas.
+- `form`: Formularios.
+- `input, textarea, select`: Campos de formulario.
+- `button, .boton`: Botones.
+- `button:hover, .boton:hover`: Botones al pasar el mouse.
+- `table`: Tablas.
+- `table th`: Cabeceras de tabla.
+- `table td`: Celdas de tabla.
+- `table tr:nth-child(even)`: Filas pares de tabla.
+- `.footer`: Pie de página.
 
 ## Propiedades CSS Usadas
 
@@ -90,7 +91,7 @@
 - `--fuente-principal: 'Montserrat', sans-serif;`: Variable para fuente principal.
 - `--fuente-secundaria: 'Arial', sans-serif;`: Variable para fuente secundaria.
 
-- `font-family`: Propiedad para definir la fuente.
+- `font-family`: Define la fuente.
 - `line-height`: Altura de línea del texto.
 - `color`: Color del texto.
 - `background-color`: Color de fondo.
@@ -98,6 +99,29 @@
 - `padding`: Relleno interno.
 - `display`: Tipo de display (flex, etc.).
 - `justify-content`: Alineación en flexbox.
+- `gap`: Espacio entre elementos flex.
+- `position`: Posicionamiento.
+- `top`: Posición superior.
+- `z-index`: Índice Z.
+- `box-shadow`: Sombra de caja.
+- `transition`: Transición.
+- `max-width`: Ancho máximo.
+- `height`: Altura.
+- `auto`: Valor automático.
+- `border-radius`: Radio del borde.
+- `text-align`: Alineación del texto.
+- `margin-bottom`: Margen inferior.
+- `list-style-type`: Tipo de lista.
+- `border-top`: Borde superior.
+- `width`: Ancho.
+- `border`: Borde.
+- `box-sizing`: Modelo de caja.
+- `cursor`: Cursor del mouse.
+- `font-weight`: Peso de la fuente.
+- `border-collapse`: Colapso de bordes en tabla.
+- `text-decoration`: Decoración del texto.
+- `background`: Fondo.
+- `border-bottom`: Borde inferior.
 - `gap`: Espacio entre elementos en flexbox.
 - `position`: Posicionamiento (sticky, etc.).
 - `top`: Posición desde arriba.
