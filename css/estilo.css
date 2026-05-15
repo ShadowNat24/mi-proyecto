@@ -156,3 +156,21 @@ img {
   height: auto;
   border-radius: 8px;
 }
+
+.footer {
+  text-align: center;
+  padding: 20px;
+  background-color: var(--blanco-puro);
+  border-top: 1px solid var(--gris-claro);
+  margin-top: 40px;
+}
+
+main h1, 
+main h2 {
+  text-align: center;
+}
+
+form {
+  max-width: 600px;
+  margin: 20px auto;
+}
